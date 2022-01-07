@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -10,7 +10,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="AS_pot.ico" Type="Document" URL="../AS_pot.ico"/>
+		<Item Name="AS_pot.ico" Type="Document" URL="../../images/AS_pot.ico"/>
 		<Item Name="Icons8-Ios7-Industry-Potentiometer.ico" Type="Document" URL="../Icons8-Ios7-Industry-Potentiometer.ico"/>
 		<Item Name="Main Pressure Sensor.vi" Type="VI" URL="../Main Pressure Sensor.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
@@ -262,6 +262,7 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{1C35C267-C55D-4911-8F00-95B6E46FC4E1}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{45723DC8-9076-4024-935A-82B040876AB7}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{EB261A69-69CD-4C6F-962F-BE21C4EFF0B9}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Aeroscope Pressure Transducer</Property>
@@ -297,79 +298,6 @@
 				<Property Name="TgtF_targetfileName" Type="Str">PressureTransducer.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="My Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">Aersoscope String Pot</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{98237E58-B99C-4B77-93E0-32A881B930F6}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI System Configuration Runtime 15.0.0</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{0E192465-CC28-4C84-BE81-710B71C595A3}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{7A1192BB-1A96-4D8B-9E44-446E5F071B68}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-DAQmx Runtime 15.0.1</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
-				<Property Name="DistPart[2].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{E2AC2B2F-683A-45BA-ADCE-8D1CE8A0E7A8}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI LabVIEW Runtime 2018 SP1 f2</Property>
-				<Property Name="DistPart[2].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
-				<Property Name="DistPart[2].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[2].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[1].productName" Type="Str">NI Logos 18.1</Property>
-				<Property Name="DistPart[2].SoftDep[1].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
-				<Property Name="DistPart[2].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[2].productName" Type="Str">NI TDM Streaming 18.0</Property>
-				<Property Name="DistPart[2].SoftDep[2].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[2].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[3].productName" Type="Str">NI VC2010MSMs</Property>
-				<Property Name="DistPart[2].SoftDep[3].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
-				<Property Name="DistPart[2].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[4].productName" Type="Str">NI mDNS Responder 17.0</Property>
-				<Property Name="DistPart[2].SoftDep[4].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[2].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[5].productName" Type="Str">NI Deployment Framework 2018</Property>
-				<Property Name="DistPart[2].SoftDep[5].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[2].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[2].SoftDep[6].productName" Type="Str">NI Error Reporting 2018</Property>
-				<Property Name="DistPart[2].SoftDep[6].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
-				<Property Name="DistPart[2].SoftDepCount" Type="Int">7</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{3B195EBF-4A09-46E6-8EAD-931568C1344C}</Property>
-				<Property Name="DistPartCount" Type="Int">3</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/Aersoscope String Pot/My Installer</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">My Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
-				<Property Name="INST_productName" Type="Str">Aersoscope String Pot</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">18018006</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
-				<Property Name="MSI_distID" Type="Str">{88BCF1A5-7051-4B7B-A0E9-354E2D791296}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{2240AA27-E8E3-4713-AFD7-1719CCC2FF15}</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">String Pot Voltage Grabber.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">String Pot Voltage Grabber</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Aersoscope String Pot</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{DEDB647E-BF7D-4B8A-B11D-B7F124559201}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">String Pot Recorder</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/String Pot Recorder</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
-			</Item>
 			<Item Name="Pressure Transducer Installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">Aersoscope Pressure Transducer</Property>
 				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
@@ -385,7 +313,7 @@
 				<Property Name="INST_productName" Type="Str">Aeroscope Pressure Transducer</Property>
 				<Property Name="INST_productVersion" Type="Str">1.1.5</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">18018006</Property>
+				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
 				<Property Name="MSI_arpCompany" Type="Str">MSR Consulting</Property>
 				<Property Name="MSI_distID" Type="Str">{51CB700C-2653-4D9B-B84D-BEDA82A83406}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
@@ -414,6 +342,7 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{5710D3E7-A039-401F-B80F-FE5A9C481B0A}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{9D6D4D18-38D6-4895-AC7D-766C64B7CBAB}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{2E5A6DD8-8AB8-4CA7-A4A0-A740BD2DBC59}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">String Pot Recorder</Property>
@@ -424,7 +353,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{DB6EA55B-EEA9-4450-8A91-69AEECEAD17E}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
+				<Property Name="Bld_version.build" Type="Int">5</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">String Pot Voltage Grabber.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/String Pot Recorder/String Pot Voltage Grabber.exe</Property>
@@ -434,7 +363,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/String Pot Recorder/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/AS_pot.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{8B6FAB0E-4F90-42AD-AACC-6FD3CA05E300}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5703CAD4-0662-4101-97CD-83836D4BE8D5}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
@@ -447,6 +376,95 @@
 				<Property Name="TgtF_productName" Type="Str">String Pot Recorder</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{DEDB647E-BF7D-4B8A-B11D-B7F124559201}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">String Pot Voltage Grabber.exe</Property>
+			</Item>
+			<Item Name="StringPotInstaller" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">Aersoscope String Pot</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{76D46C45-F70E-4086-8C78-A30B9CA1CE88}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI System Configuration Runtime 21.0.0</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{0E192465-CC28-4C84-BE81-710B71C595A3}</Property>
+				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
+				<Property Name="DistPart[1].productID" Type="Str">{5F896240-152C-41BF-BEEE-7EAF5609317A}</Property>
+				<Property Name="DistPart[1].productName" Type="Str">NI-DAQmx Runtime 21.3</Property>
+				<Property Name="DistPart[1].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
+				<Property Name="DistPart[2].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[2].productID" Type="Str">{6B440D80-3B0D-43B2-8A06-E2E939AA1006}</Property>
+				<Property Name="DistPart[2].productName" Type="Str">NI LabVIEW Runtime 2020 SP1</Property>
+				<Property Name="DistPart[2].SoftDep[0].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
+				<Property Name="DistPart[2].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
+				<Property Name="DistPart[2].SoftDep[1].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[1].productName" Type="Str">NI Deployment Framework 2020</Property>
+				<Property Name="DistPart[2].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
+				<Property Name="DistPart[2].SoftDep[10].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
+				<Property Name="DistPart[2].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
+				<Property Name="DistPart[2].SoftDep[11].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[11].productName" Type="Str">NI TDM Streaming 19.0</Property>
+				<Property Name="DistPart[2].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
+				<Property Name="DistPart[2].SoftDep[2].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
+				<Property Name="DistPart[2].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
+				<Property Name="DistPart[2].SoftDep[3].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2020</Property>
+				<Property Name="DistPart[2].SoftDep[3].upgradeCode" Type="Str">{00D0B680-F876-4E42-A25F-52B65418C2A6}</Property>
+				<Property Name="DistPart[2].SoftDep[4].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 Non-English Support.</Property>
+				<Property Name="DistPart[2].SoftDep[4].upgradeCode" Type="Str">{61FCC73D-8092-457D-8905-27C0060D88E1}</Property>
+				<Property Name="DistPart[2].SoftDep[5].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[5].productName" Type="Str">NI Logos 20.0</Property>
+				<Property Name="DistPart[2].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
+				<Property Name="DistPart[2].SoftDep[6].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2020</Property>
+				<Property Name="DistPart[2].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
+				<Property Name="DistPart[2].SoftDep[7].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[7].productName" Type="Str">NI mDNS Responder 19.0</Property>
+				<Property Name="DistPart[2].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
+				<Property Name="DistPart[2].SoftDep[8].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
+				<Property Name="DistPart[2].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
+				<Property Name="DistPart[2].SoftDep[9].exclude" Type="Bool">false</Property>
+				<Property Name="DistPart[2].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
+				<Property Name="DistPart[2].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
+				<Property Name="DistPart[2].SoftDepCount" Type="Int">12</Property>
+				<Property Name="DistPart[2].upgradeCode" Type="Str">{D84FC73F-D1E0-4C05-A30C-DB882CD1ABD8}</Property>
+				<Property Name="DistPartCount" Type="Int">3</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/Aersoscope String Pot/StringPotInstaller</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">StringPotInstaller</Property>
+				<Property Name="INST_defaultDir" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
+				<Property Name="INST_productName" Type="Str">Aersoscope String Pot</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{88BCF1A5-7051-4B7B-A0E9-354E2D791296}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{2240AA27-E8E3-4713-AFD7-1719CCC2FF15}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">String Pot Voltage Grabber.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">String Pot Voltage Grabber</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Aersoscope String Pot</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{DEDB647E-BF7D-4B8A-B11D-B7F124559201}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">String Pot Recorder</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/String Pot Recorder</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
 		</Item>
 	</Item>
