@@ -33,8 +33,13 @@ The 9401 should be connected as follows for proper operation:
 * The A lead should be connected to ``PFI0``, or pin 14
 * The B lead should be connected to ``PFI2``, or pin 17
 * Ground should be connected to any COM (pin 0 will do)
+* The final lead should be connect to the +5V on the encoder and to PFIO7 (pin 27) on the card.  This pin will power the encoder with a high DIO signal (~4V)  
 
 ### File Writing
 
 Files are written in ASCII format at whatever rate the user specifies via the control ``dt``.  The file is tab delimited and will contain two columns: time and position in inches.  Time is a double precision float which represents seconds since midnight 1 January 1904The lines are terminated with a carriage return.  
+
+### Notes
+
+* DO NOT use the first slot on the current chassis.  As of 01/2022, this pin is bent.
 
