@@ -11,7 +11,6 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="AS_pot.ico" Type="Document" URL="../../images/AS_pot.ico"/>
-		<Item Name="Icons8-Ios7-Industry-Potentiometer.ico" Type="Document" URL="../Icons8-Ios7-Industry-Potentiometer.ico"/>
 		<Item Name="Main Pressure Sensor.vi" Type="VI" URL="../Main Pressure Sensor.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -353,7 +352,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{DB6EA55B-EEA9-4450-8A91-69AEECEAD17E}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">String Pot Voltage Grabber.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/String Pot Recorder/String Pot Voltage Grabber.exe</Property>
@@ -448,6 +447,49 @@
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{2240AA27-E8E3-4713-AFD7-1719CCC2FF15}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">String Pot Voltage Grabber.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">String Pot Voltage Grabber</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">Aersoscope String Pot</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{DEDB647E-BF7D-4B8A-B11D-B7F124559201}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">String Pot Recorder</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/String Pot Recorder</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
+			</Item>
+			<Item Name="StringPotInstaller no additions" Type="Installer">
+				<Property Name="AB_Class_Path" Type="Path">/C/Program Files (x86)/National Instruments/LabVIEW 2020/vi.lib/AppBuilder/IB_Classes/MSI/IB_MSI.lvclass</Property>
+				<Property Name="AB_Temp_Project_Path" Type="Path">/C/Users/mrichardson/aeroscope/src/Aersoscope String Pot.lvproj</Property>
+				<Property Name="AB_UIClass_Path" Type="Path">/C/Program Files (x86)/National Instruments/LabVIEW 2020/vi.lib/AppBuilder/IB_Classes/Installer/UI/AB_UI_Frmwk_Installer.lvclass</Property>
+				<Property Name="Destination[0].name" Type="Str">Aersoscope String Pot</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/Aersoscope String Pot/StringPotInstaller no additions</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">StringPotInstaller no additions</Property>
+				<Property Name="INST_defaultDir" Type="Str">{A7A85511-3900-4BB3-9341-BA458A35902D}</Property>
+				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
+				<Property Name="INST_productName" Type="Str">Aersoscope String Pot</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.3</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">20008011</Property>
+				<Property Name="MSI_distID" Type="Str">{2714AEEB-A51B-4076-96C8-5F40642D45D9}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{0AA76DE4-9773-4D23-9B2F-C421B163235D}</Property>
+				<Property Name="MSI_windowMessage" Type="Str">This is the String Pot installer for Aeroscope.  This installer contains no additional installers and should only be used on systems that have the current drivers for the NI LV runtime, DAQmx etc.</Property>
+				<Property Name="MSI_windowTitle" Type="Str">String Pot</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
